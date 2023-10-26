@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="main.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Census</title>
+  </head>
+  <body>
+    <div class="navbar" id="home">
+      <a href="#home">Home</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#about">About</a>
+    </div>
+
+    <div class="welcome">
+      <h4>General Census</h4>
+    </div>
+
+    <div class="cont">
+      <form action="/xampp/htdocs/action.php" method="POST">
+        <div class="fr">
+          <div class="labtext">
+            <label for="addr">Address of the house</label>
+          </div>
+          <div class="inptext">
+            <input
+              type="text"
+              id="addr"
+              name="Address"
+              placeholder="Type Here.."
+              required
+            />
+          </div>
+        </div>
+        <div class="fr">
+          <div class="labtext">
+            <label for="hn">House Number</label>
+          </div>
+          <div class="inptext">
+            <input
+              type="number"
+              id="hn"
+              name="Housenumber"
+              placeholder="Type here.."
+              required
+            />
+          </div>
+        </div>
+        <div class="fr">
+          <div class="labtext">
+            <label for="ename">Name of the eldest person in the family</label>
+          </div>
+          <div class="inptext">
+            <input
+              type="text"
+              id="ename"
+              name="Firstname"
+              placeholder="Type here.."
+              required
+            />
+          </div>
+        </div>
+        <div class="fr">
+          <div class="labtext">
+            <label for="numf">Number of members in the family</label>
+          </div>
+          <div class="inptext">
+            <label>Number of adults</label>
+            <div>
+              <input
+                type="number"
+                id="numf"
+                name="No_Adults"
+                placeholder="Type here.."
+                required
+              />
+            </div>
+            <label>Number of children</label>
+            <div>
+              <input
+                type="number"
+                id="numf"
+                name="No_Children"
+                placeholder="Type here.."
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="fr">
+          <div class="labtext">
+            <label for="mob">Mobile number of the eldest in the family</label>
+          </div>
+          <div class="inptext">
+            <input
+              type="number"
+              id="mob"
+              name="Mobile"
+              placeholder="Type here.."
+              required
+            />
+          </div>
+        </div>
+
+        <div class="fr">
+          <label>Availability of electricity</label>
+          <div class="rb">
+            <div class="inptext">
+              <input type="radio" id="yes" name="Electricity" value="Y" required />
+              <label for="yes">Yes</label>
+            </div>
+            <br />
+            <div class="inptext">
+              <input type="radio" id="no" name="Electricity" value="N" required />
+              <label for="no">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="fr">
+          <label>Availability of LPG/PNG connection</label>
+          <div class="rb">
+            <div class="inptext">
+              <input type="radio" id="yes" name="LPG_PNG" value="Y" required />
+              <label for="yes">Yes</label>
+            </div>
+            <br />
+            <div class="inptext">
+              <input type="radio" id="no" name="LPG_PNG" value="N" required />
+              <label for="no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr">
+          <label>Main source of drinking water</label>
+          <div class="rb">
+            <div class="inptext">
+              <input
+                type="radio"
+                id="gw"
+                name="Drinking_Water"
+                value="G"
+                required
+              />
+              <label for="gw">Ground Water</label>
+            </div>
+            <br />
+            <div class="inptext">
+              <input
+                type="radio"
+                id="mp"
+                name="Drinking_Water"
+                value="M"
+                required
+              />
+              <label for="mp">Municipality/Panchayat</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr">
+          <label>Vehicles owned</label>
+          <div class="rb">
+            <div class="inptext">
+              <input type="radio" id="yes" name="Vehicles_Owned" value="Y" required />
+              <label for="yes">Yes</label>
+            </div>
+            <br />
+            <div class="inptext">
+              <input type="radio" id="no" name="Vehicles_Owned" value="N" required />
+              <label for="no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="sub">
+          <input id="sub" type="submit" value="Submit" />
+        </div>
+      </form>
+      
+
+    <footer id="about" class="down">
+      <h3>About</h3>
+      <p>
+        This census is to help the authorities to know about the economial and
+        population status of the people in the country. It will surely help in
+        contributing development to the society and so the country too.
+      </p>
+      <div id="contact" class="contactus">
+        <h4>Phone:+91-123456789</h4>
+        <h4>Email:textus@census.com</h4>
+      </div>
+    </footer>
+  </body>
+</html>

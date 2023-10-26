@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:wght@600&display=swap");
+body {
+  font-family: "Besley", serif;
+  margin: 2px;
+  background: lightgrey;
+}
+.navbar {
+  color: black;
+  background-color: rgb(4, 82, 85);
+  overflow: hidden;
+  font-size: larger;
+  text-align: center;
+}
+.navbar a {
+  float: left;
+  color: rgb(4, 161, 161);
+  text-align: center;
+  padding: 25px 50px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.navbar a:hover {
+  background-color: rgb(10, 94, 94);
+}
+
+.welcome {
+  text-align: center;
+  font-size: 25px;
+  padding: 25px;
+  background-color: rgba(0, 128, 128, 0.31);
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+form {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 2px solid rgba(12, 119, 35, 0.582);
+  box-shadow: rgba(58, 58, 189, 0.432);
+  position: absolute;
+  left: 20%;
+  right: 20%;
+}
+
+.labtext {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.inptext {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.fr:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .labtext,
+  .inptext,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.rb {
+  text-align: center;
+}
+.sub {
+  text-align: center;
+  position: sticky;
+}
+
+#team {
+  background-color: rgba(0, 139, 139, 0.274);
+  text-align: center;
+  font-size: large;
+  width: 100%;
+}
+.Teamdiv {
+  position: absolute;
+  background-color: teal;
+  height: 111px;
+  border: 2px solid rgb(0, 128, 128);
+  bottom: 0;
+  top: 1500px;
+}
+.sec {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #80808067;
+  float: left;
+  width: 18%;
+  margin-bottom: 20px;
+  padding: 2px 15px;
+}
+.sec:hover {
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+  color: rgba(3, 110, 3, 0.753);
+}
+
+.sec-cont {
+  padding: 2px 16px;
+  text-align: center;
+}
+footer {
+  height: 40%;
+  position: absolute;
+  top: 1550px;
+  background-color: rgb(4, 82, 85);
+  /* border: 2px solid teal; */
+}
+footer p {
+  text-align: left;
+  float: left;
+}
+h3 {
+    padding-left: 20px;;
+    font-size: 30px;
+}
+
+.contactus{
+  text-align: center;
+  text-decoration: solid;
+}
